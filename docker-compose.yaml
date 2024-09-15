@@ -1,7 +1,7 @@
 version: '3.8'
  
 services:
-    incident-api:
+    monomap-api:
       build: .
       container_name: monomap-api
       ports:
@@ -11,7 +11,7 @@ services:
  
     mongo:
       image: mongo
-      container_name: mongo
+      container_name: mongo2
       environment:
         MONGO_INITDB_ROOT_USERNAME: root
         MONGO_INITDB_ROOT_PASSWORD: root
