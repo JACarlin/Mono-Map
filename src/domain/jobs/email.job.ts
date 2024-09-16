@@ -34,7 +34,7 @@ export const emailJob = () => {
                         subject: `Nuevo caso de viruela del mono`,
                         htmlBody: htmlBody
                     });
-                    console.log(`Email enviado para el incidente con ID: ${mpCase._id}`)
+                    console.log(`Email enviado del caso con ID: ${mpCase._id}`)
                     await mpCaseDataSource.updateMPCase(mpCase._id.toString(), { ...mpCase, isSent: true })
 
                     console.log('Caso actualizado')
