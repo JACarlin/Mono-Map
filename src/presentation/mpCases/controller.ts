@@ -1,5 +1,5 @@
 import {Request, Response} from 'express';
-import { MPCaseModel } from '../../data/models/mpcase.model.ts';
+import { MPCaseModel } from '../../data/models/mpcase.model';
 
 export class MPCaseController{
     public getMPCases = async (req: Request, res:Response)=>{
