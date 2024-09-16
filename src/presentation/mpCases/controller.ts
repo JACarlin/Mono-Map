@@ -12,7 +12,8 @@ export class MPCaseController{
     }
     public createMPCase = async (req:Request, res:Response)=>{
         try {
-            const {lat, lng, isSent, genre, age, creationDate} = req.body;
+            const {lat, lng, isSent, genre, age} = req.body;
+            const creationDate = new Date();
             const newMPCase = await MPCaseModel.create({
                 lat, lng, isSent, genre, age, creationDate});
             return res.json(newMPCase);
